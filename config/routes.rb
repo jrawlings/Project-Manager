@@ -1,6 +1,8 @@
 ProjectManager::Application.routes.draw do
   
-  resources :projects
+  resources :projects do
+    resources :roles
+  end
 
   resources :people
   

@@ -8,4 +8,11 @@ module ApplicationHelper
       options)
   end
   
+  def dom_class_first(object, array)
+    if(object == array.first)
+      return "first"
+    end 
+    nil
+  end
+  
 end

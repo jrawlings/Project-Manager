@@ -9,4 +9,8 @@ class Role < ActiveRecord::Base
   validates :status_id, :presence => true
   validate :title, :presence => true
   
+  attr_protected :project_id
+  
+  default_scope order("updated_at DESC")
+  
 end
